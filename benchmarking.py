@@ -70,8 +70,29 @@ def heap_sort(a):
         a[1], a[i] = a[i], a[1]
 
 
-def quick_sort(a):
-    """Sorts a list using the 'quick-sort' algorithm."""
+"""Sorts a list using the 'quick-sort' algorithm."""
+""""DEFINE PARTITION FOR QUICKSORT """
+array = [3,6,9,2,654,87,1 ,88,23, 13,26,33,18,985]
+def partition(array, low, high):
+    i = (low - 1)
+    pivot = array[high]
+
+    for j in range(low, high):
+        if array[j] <= pivot:
+            i = i + 1
+            array[i], array[j] = array[j], array[i]
+    array[i + 1], array[high] = array[high], array[i + 1]
+    return i + 1
+
+
+def quicksort(array, low, high):
+    if low < high:
+        part = partition(array, low, high)
+        quicksort(array, low, part - 1)
+        quicksort(array, part + 1, high)
+
+quicksort(array, 0, len(array)-1)
+print (array)
     pass
 
 
