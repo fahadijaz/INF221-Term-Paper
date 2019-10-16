@@ -1,3 +1,6 @@
+import math
+
+
 def merge(a, first_index, middle_index, last_index):
     n1 = middle_index - first_index + 1
     n2 = last_index - middle_index
@@ -37,17 +40,34 @@ def merge_sort(a, first_index, last_index):
         return merge(a, first_index, middle_index, last_index)
 
 
+def parent(i):
+    return math.floor((i-1) / 2)
+
+
+def left_child(i):
+    return 2 * i + 1
+
+
+def right_child(i):
+    
+
+
 def build_max_heap(a):
     """Builds a max heap"""
     pass
 
+
 def max_heapify(a):
     """Max-heapifies a list"""
+
     pass
+
 
 def heap_sort(a):
     """Sorts a list using the 'heap-sort' algorithm."""
-    pass
+    build_max_heap(a)
+    for i in range(len(a), 2, -1):
+        a[1], a[i] = a[i], a[1]
 
 
 def quick_sort(a):
