@@ -49,31 +49,44 @@ def left_child(i):
 
 
 def right_child(i):
-    
+    return 2 * i + 2
+
+
+def max_heapify(a, i, heap_size):
+    """Max-heapifies subtree of 'a' rooted at 'i'."""
+    l = left_child(i)
+    r = right_child(i)
+    if l <= heap_size - 1 and a[l] > a[i]:
+        largest = l
+    else:
+        largest = i
+    if r <= heap_size - 1 and a[r] > a[largest]:
+        largest = r
+    if largest != i:
+        a[i], a[largest] = a[largest], a[i]
+        max_heapify(a, largest, heap_size)
 
 
 def build_max_heap(a):
     """Builds a max heap"""
-    pass
-
-
-def max_heapify(a):
-    """Max-heapifies a list"""
-
-    pass
+    heap_size = len(a)
+    for i in range(math.floor(heap_size / 2), -1, -1):
+        max_heapify(a, i, heap_size)
 
 
 def heap_sort(a):
     """Sorts a list using the 'heap-sort' algorithm."""
+
     build_max_heap(a)
-    for i in range(len(a), 2, -1):
-        a[1], a[i] = a[i], a[1]
+    heap_size = len(a)
+    for i in range(len(a) - 1, 0, -1):
+        a[0], a[i] = a[i], a[0]
+        heap_size -= 1
+        max_heapify(a, 0, heap_size)
 
 
-"""Sorts a list using the 'quick-sort' algorithm."""
-""""DEFINE PARTITION FOR QUICKSORT """
-array = [3,6,9,2,654,87,1 ,88,23, 13,26,33,18,985]
 def partition(array, low, high):
+    """DEFINE PARTITION FOR QUICKSORT"""
     i = (low - 1)
     pivot = array[high]
 
@@ -85,17 +98,17 @@ def partition(array, low, high):
     return i + 1
 
 
-def quicksort(array, low, high):
+def quick_sort(array, low, high):
+    """Sorts a list using the 'quick-sort' algorithm."""
     if low < high:
         part = partition(array, low, high)
-        quicksort(array, low, part - 1)
-        quicksort(array, part + 1, high)
-
-quicksort(array, 0, len(array)-1)
-print (array)
-    pass
+        quick_sort(array, low, part - 1)
+        quick_sort(array, part + 1, high)
 
 
 if __name__ == '__main__':
     unsorted = [-2, 3, 4, -4, 2, 0, 1, 5, -5, -3, -1]
-    print(merge_sort(unsorted, 1, len(unsorted)) == sorted(unsorted))
+    unsorted_copy = [-2, 3, 4, -4, 2, 0, 1, 5, -5, -3, -1]
+    heap_sort(unsorted)
+    print(unsorted == sorted(unsorted_copy))
+    print(unsorted)
