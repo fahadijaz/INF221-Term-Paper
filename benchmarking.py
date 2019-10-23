@@ -31,8 +31,10 @@ def merge(a, first_index, middle_index, last_index):
     return a
 
 
-def merge_sort(a, first_index, last_index):
+def merge_sort(a, first_index=0, last_index=None):
     """Sorts a list using the 'merge-sort' algorithm."""
+    if last_index is None:
+        last_index = len(a) - 1
     if first_index < last_index:
         middle_index = (first_index + last_index) // 2
         merge_sort(a, first_index, middle_index)
@@ -98,8 +100,10 @@ def partition(array, low, high):
     return i + 1
 
 
-def quick_sort(array, low, high):
+def quick_sort(array, low=0, high=None):
     """Sorts a list using the 'quick-sort' algorithm."""
+    if high is None:
+        high = len(array) - 1
     if low < high:
         part = partition(array, low, high)
         quick_sort(array, low, part - 1)
