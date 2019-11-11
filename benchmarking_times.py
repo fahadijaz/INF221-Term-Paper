@@ -7,6 +7,7 @@ import math
 
 
 def merge(a, first_index, middle_index, last_index):
+    """Merge function for use in merge sort."""
     n1 = middle_index - first_index + 1
     n2 = last_index - middle_index
 
@@ -48,14 +49,17 @@ def merge_sort(a, first_index=0, last_index=None):
 
 
 def parent(i):
+    """Returns the parent to a node in a heap."""
     return math.floor((i-1) / 2)
 
 
 def left_child(i):
+    """Returns the left child of a node in a heap."""
     return 2 * i + 1
 
 
 def right_child(i):
+    """Returns the right child of a node in a heap."""
     return 2 * i + 2
 
 
