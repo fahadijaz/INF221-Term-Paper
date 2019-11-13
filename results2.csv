@@ -1,0 +1,666 @@
+,Input ordering,Input size,Run number,Sorting algorithm,Time
+0,Sorted,10,1,Merge sort,0.4449755
+1,Sorted,10,2,Merge sort,0.5213266
+2,Sorted,10,3,Merge sort,0.5662203
+3,Sorted,10,4,Merge sort,0.4555609
+4,Sorted,10,5,Merge sort,0.4150658
+5,Sorted,10,6,Merge sort,0.4342754
+6,Sorted,10,7,Merge sort,0.4119654
+7,Sorted,10,1,Heapsort,0.1921432
+8,Sorted,10,2,Heapsort,0.1958655
+9,Sorted,10,3,Heapsort,0.1953268
+10,Sorted,10,4,Heapsort,0.201502
+11,Sorted,10,5,Heapsort,0.1786022
+12,Sorted,10,6,Heapsort,0.2415853
+13,Sorted,10,7,Heapsort,0.2376613
+14,Sorted,10,1,Quicksort,0.2355071
+15,Sorted,10,2,Quicksort,0.2563821
+16,Sorted,10,3,Quicksort,0.2615499
+17,Sorted,10,4,Quicksort,0.2756887
+18,Sorted,10,5,Quicksort,0.2886458
+19,Sorted,10,6,Quicksort,0.2382553
+20,Sorted,10,7,Quicksort,0.272446
+21,Sorted,10,1,Built-in Python,0.2130829
+22,Sorted,10,2,Built-in Python,0.2958134
+23,Sorted,10,3,Built-in Python,0.2642596
+24,Sorted,10,4,Built-in Python,0.1859149
+25,Sorted,10,5,Built-in Python,0.1861179
+26,Sorted,10,6,Built-in Python,0.1895251
+27,Sorted,10,7,Built-in Python,0.2464269
+28,Sorted,10,1,Numpy,0.1509911
+29,Sorted,10,2,Numpy,0.2635169
+30,Sorted,10,3,Numpy,0.1687372
+31,Sorted,10,4,Numpy,0.1741537
+32,Sorted,10,5,Numpy,0.2456694
+33,Sorted,10,6,Numpy,0.1525415
+34,Sorted,10,7,Numpy,0.1821862
+35,Sorted,100,1,Merge sort,0.4432119
+36,Sorted,100,2,Merge sort,0.2682758
+37,Sorted,100,3,Merge sort,0.3224261
+38,Sorted,100,4,Merge sort,0.2953935
+39,Sorted,100,5,Merge sort,0.2924027
+40,Sorted,100,6,Merge sort,0.2869778
+41,Sorted,100,7,Merge sort,0.2932017
+42,Sorted,100,1,Heapsort,0.3376844
+43,Sorted,100,2,Heapsort,0.4545633
+44,Sorted,100,3,Heapsort,0.5870505
+45,Sorted,100,4,Heapsort,0.4263686
+46,Sorted,100,5,Heapsort,0.3269567
+47,Sorted,100,6,Heapsort,1.7262435
+48,Sorted,100,7,Heapsort,0.5091275
+49,Sorted,100,1,Quicksort,0.3106725
+50,Sorted,100,2,Quicksort,0.4431699
+51,Sorted,100,3,Quicksort,0.4051784
+52,Sorted,100,4,Quicksort,0.3310296
+53,Sorted,100,5,Quicksort,1.0184681
+54,Sorted,100,6,Quicksort,0.3141917
+55,Sorted,100,7,Quicksort,0.3373674
+56,Sorted,100,1,Built-in Python,0.2281975
+57,Sorted,100,2,Built-in Python,0.2134525
+58,Sorted,100,3,Built-in Python,0.2194887
+59,Sorted,100,4,Built-in Python,0.2142963
+60,Sorted,100,5,Built-in Python,0.2194519
+61,Sorted,100,6,Built-in Python,0.2140555
+62,Sorted,100,7,Built-in Python,0.2146516
+63,Sorted,100,1,Numpy,0.2121042
+64,Sorted,100,2,Numpy,0.2035161
+65,Sorted,100,3,Numpy,0.2296659
+66,Sorted,100,4,Numpy,0.2020155
+67,Sorted,100,5,Numpy,0.196702
+68,Sorted,100,6,Numpy,0.2135187
+69,Sorted,100,7,Numpy,0.2178649
+70,Sorted,1000,1,Merge sort,0.3670448
+71,Sorted,1000,2,Merge sort,0.3947061
+72,Sorted,1000,3,Merge sort,0.3830425
+73,Sorted,1000,4,Merge sort,0.3889008
+74,Sorted,1000,5,Merge sort,0.3740941
+75,Sorted,1000,6,Merge sort,0.396961
+76,Sorted,1000,7,Merge sort,0.4603793
+77,Sorted,1000,1,Heapsort,0.2563512
+78,Sorted,1000,2,Heapsort,0.203802
+79,Sorted,1000,3,Heapsort,0.220042
+80,Sorted,1000,4,Heapsort,0.207765
+81,Sorted,1000,5,Heapsort,0.2349789
+82,Sorted,1000,6,Heapsort,0.2296274
+83,Sorted,1000,7,Heapsort,0.2168749
+84,Sorted,1000,1,Built-in Python,0.2053688
+85,Sorted,1000,2,Built-in Python,0.2236675
+86,Sorted,1000,3,Built-in Python,0.2245245
+87,Sorted,1000,4,Built-in Python,0.2053099
+88,Sorted,1000,5,Built-in Python,0.2065474
+89,Sorted,1000,6,Built-in Python,0.1892801
+90,Sorted,1000,7,Built-in Python,0.2156152
+91,Sorted,1000,1,Numpy,0.2812807
+92,Sorted,1000,2,Numpy,0.3507052
+93,Sorted,1000,3,Numpy,0.3044253
+94,Sorted,1000,4,Numpy,0.2923986
+95,Sorted,1000,5,Numpy,0.3058759
+96,Sorted,1000,6,Numpy,0.3198037
+97,Sorted,1000,7,Numpy,0.3191185
+98,Sorted,10000,1,Merge sort,0.1800098
+99,Sorted,10000,2,Merge sort,0.1812017
+100,Sorted,10000,3,Merge sort,0.1751029
+101,Sorted,10000,4,Merge sort,0.1846785
+102,Sorted,10000,5,Merge sort,0.463158
+103,Sorted,10000,6,Merge sort,0.1951177
+104,Sorted,10000,7,Merge sort,0.1909548
+105,Sorted,10000,1,Heapsort,0.291949
+106,Sorted,10000,2,Heapsort,0.2912098
+107,Sorted,10000,3,Heapsort,0.3013502
+108,Sorted,10000,4,Heapsort,0.3391096
+109,Sorted,10000,5,Heapsort,0.2920499
+110,Sorted,10000,6,Heapsort,0.3526307
+111,Sorted,10000,7,Heapsort,0.3045994
+112,Sorted,10000,1,Built-in Python,0.2106831
+113,Sorted,10000,2,Built-in Python,0.2270479
+114,Sorted,10000,3,Built-in Python,0.8793047
+115,Sorted,10000,4,Built-in Python,1.2726773
+116,Sorted,10000,5,Built-in Python,0.5798161
+117,Sorted,10000,6,Built-in Python,1.1156013
+118,Sorted,10000,7,Built-in Python,0.343512
+119,Sorted,10000,1,Numpy,0.1650499
+120,Sorted,10000,2,Numpy,0.1205021
+121,Sorted,10000,3,Numpy,0.1276396
+122,Sorted,10000,4,Numpy,0.1043946
+123,Sorted,10000,5,Numpy,0.0881155
+124,Sorted,10000,6,Numpy,0.0894826
+125,Sorted,10000,7,Numpy,0.0937734
+126,Sorted,100000,1,Merge sort,1.9605164
+127,Sorted,100000,2,Merge sort,1.6882198
+128,Sorted,100000,3,Merge sort,1.7678091
+129,Sorted,100000,4,Merge sort,1.7360829
+130,Sorted,100000,5,Merge sort,2.384933
+131,Sorted,100000,6,Merge sort,2.9160697
+132,Sorted,100000,7,Merge sort,2.0246812
+133,Sorted,100000,1,Heapsort,4.3762633
+134,Sorted,100000,2,Heapsort,3.5359721
+135,Sorted,100000,3,Heapsort,3.6206463
+136,Sorted,100000,4,Heapsort,3.5932002
+137,Sorted,100000,5,Heapsort,2.8399847
+138,Sorted,100000,6,Heapsort,2.5556096
+139,Sorted,100000,7,Heapsort,2.320538
+140,Sorted,100000,1,Built-in Python,0.1478639
+141,Sorted,100000,2,Built-in Python,0.1553115
+142,Sorted,100000,3,Built-in Python,0.1467844
+143,Sorted,100000,4,Built-in Python,0.1408837
+144,Sorted,100000,5,Built-in Python,0.1402711
+145,Sorted,100000,6,Built-in Python,0.1601141
+146,Sorted,100000,7,Built-in Python,0.150058
+147,Sorted,100000,1,Numpy,0.3342963
+148,Sorted,100000,2,Numpy,0.3483067
+149,Sorted,100000,3,Numpy,0.2687817
+150,Sorted,100000,4,Numpy,0.2995266
+151,Sorted,100000,5,Numpy,0.5116604
+152,Sorted,100000,6,Numpy,0.3536582
+153,Sorted,100000,7,Numpy,0.3638554
+154,Sorted,1000000,1,Merge sort,30.7292807
+155,Sorted,1000000,2,Merge sort,33.1359314
+156,Sorted,1000000,3,Merge sort,34.2892227
+157,Sorted,1000000,4,Merge sort,30.0532296
+158,Sorted,1000000,5,Merge sort,40.2324561
+159,Sorted,1000000,6,Merge sort,48.2614091
+160,Sorted,1000000,7,Merge sort,26.5587015
+161,Sorted,1000000,1,Heapsort,35.3895414
+162,Sorted,1000000,2,Heapsort,41.142507
+163,Sorted,1000000,3,Heapsort,41.6707092
+164,Sorted,1000000,4,Heapsort,49.7635623
+165,Sorted,1000000,5,Heapsort,49.2404286
+166,Sorted,1000000,6,Heapsort,49.7079093
+167,Sorted,1000000,7,Heapsort,49.3769851
+168,Sorted,1000000,1,Built-in Python,0.599228
+169,Sorted,1000000,2,Built-in Python,0.5917155
+170,Sorted,1000000,3,Built-in Python,0.5444491
+171,Sorted,1000000,4,Built-in Python,0.5620477
+172,Sorted,1000000,5,Built-in Python,0.5932394
+173,Sorted,1000000,6,Built-in Python,0.5557089
+174,Sorted,1000000,7,Built-in Python,0.5961444
+175,Sorted,1000000,1,Numpy,1.0736184
+176,Sorted,1000000,2,Numpy,1.1507476
+177,Sorted,1000000,3,Numpy,1.0359398
+178,Sorted,1000000,4,Numpy,1.1202193
+179,Sorted,1000000,5,Numpy,1.1897584
+180,Sorted,1000000,6,Numpy,1.1022145
+181,Sorted,1000000,7,Numpy,1.1023648
+182,Sorted,10000000,1,Merge sort,444.7074745
+183,Sorted,10000000,2,Merge sort,444.6131206
+184,Sorted,10000000,3,Merge sort,428.1475716
+185,Sorted,10000000,4,Merge sort,427.4001358
+186,Sorted,10000000,5,Merge sort,439.5177314
+187,Sorted,10000000,6,Merge sort,427.6485621
+188,Sorted,10000000,7,Merge sort,233.4351116
+189,Sorted,10000000,1,Heapsort,278.4036511
+190,Sorted,10000000,2,Heapsort,277.4319842
+191,Sorted,10000000,3,Heapsort,277.8205058
+192,Sorted,10000000,4,Heapsort,277.4643223
+193,Sorted,10000000,5,Heapsort,277.632108
+194,Sorted,10000000,6,Heapsort,278.117677
+195,Sorted,10000000,7,Heapsort,278.388969
+196,Sorted,10000000,1,Built-in Python,4.3346524
+197,Sorted,10000000,2,Built-in Python,4.3297033
+198,Sorted,10000000,3,Built-in Python,4.4363109
+199,Sorted,10000000,4,Built-in Python,4.3389135
+200,Sorted,10000000,5,Built-in Python,4.347473
+201,Sorted,10000000,6,Built-in Python,4.3139711
+202,Sorted,10000000,7,Built-in Python,4.2771826
+203,Sorted,10000000,1,Numpy,7.3660035
+204,Sorted,10000000,2,Numpy,7.3645791
+205,Sorted,10000000,3,Numpy,7.2656733
+206,Sorted,10000000,4,Numpy,7.3052072
+207,Sorted,10000000,5,Numpy,7.4027937
+208,Sorted,10000000,6,Numpy,7.3574815
+209,Sorted,10000000,7,Numpy,7.3311775
+210,Reverse Sorted,10,1,Merge sort,0.1991181
+211,Reverse Sorted,10,2,Merge sort,0.2012192
+212,Reverse Sorted,10,3,Merge sort,0.2086517
+213,Reverse Sorted,10,4,Merge sort,0.2008764
+214,Reverse Sorted,10,5,Merge sort,0.2005675
+215,Reverse Sorted,10,6,Merge sort,0.2006952
+216,Reverse Sorted,10,7,Merge sort,0.2038826
+217,Reverse Sorted,10,1,Heapsort,0.2552739
+218,Reverse Sorted,10,2,Heapsort,0.2608113
+219,Reverse Sorted,10,3,Heapsort,0.2566311
+220,Reverse Sorted,10,4,Heapsort,0.2574018
+221,Reverse Sorted,10,5,Heapsort,0.261283
+222,Reverse Sorted,10,6,Heapsort,0.2586571
+223,Reverse Sorted,10,7,Heapsort,0.2610577
+224,Reverse Sorted,10,1,Quicksort,0.1983908
+225,Reverse Sorted,10,2,Quicksort,0.1977143
+226,Reverse Sorted,10,3,Quicksort,0.1985385
+227,Reverse Sorted,10,4,Quicksort,0.1959251
+228,Reverse Sorted,10,5,Quicksort,0.1985631
+229,Reverse Sorted,10,6,Quicksort,0.1996575
+230,Reverse Sorted,10,7,Quicksort,0.205396
+231,Reverse Sorted,10,1,Built-in Python,0.4582781
+232,Reverse Sorted,10,2,Built-in Python,0.4687958
+233,Reverse Sorted,10,3,Built-in Python,0.4628842
+234,Reverse Sorted,10,4,Built-in Python,0.4642078
+235,Reverse Sorted,10,5,Built-in Python,0.4643081
+236,Reverse Sorted,10,6,Built-in Python,0.4935778
+237,Reverse Sorted,10,7,Built-in Python,0.4644817
+238,Reverse Sorted,10,1,Numpy,0.3876569
+239,Reverse Sorted,10,2,Numpy,0.3819102
+240,Reverse Sorted,10,3,Numpy,0.3829802
+241,Reverse Sorted,10,4,Numpy,0.3827099
+242,Reverse Sorted,10,5,Numpy,0.3875914
+243,Reverse Sorted,10,6,Numpy,0.3800791
+244,Reverse Sorted,10,7,Numpy,0.3813164
+245,Reverse Sorted,100,1,Merge sort,0.273268
+246,Reverse Sorted,100,2,Merge sort,0.306205
+247,Reverse Sorted,100,3,Merge sort,0.2749193
+248,Reverse Sorted,100,4,Merge sort,0.275955
+249,Reverse Sorted,100,5,Merge sort,0.2733068
+250,Reverse Sorted,100,6,Merge sort,0.2771757
+251,Reverse Sorted,100,7,Merge sort,0.2902694
+252,Reverse Sorted,100,1,Heapsort,0.2607337
+253,Reverse Sorted,100,2,Heapsort,0.257669
+254,Reverse Sorted,100,3,Heapsort,0.3106787
+255,Reverse Sorted,100,4,Heapsort,0.2720066
+256,Reverse Sorted,100,5,Heapsort,0.2590827
+257,Reverse Sorted,100,6,Heapsort,0.2613186
+258,Reverse Sorted,100,7,Heapsort,0.3968942
+259,Reverse Sorted,100,1,Quicksort,0.2088813
+260,Reverse Sorted,100,2,Quicksort,0.2116007
+261,Reverse Sorted,100,3,Quicksort,0.194831
+262,Reverse Sorted,100,4,Quicksort,0.1927141
+263,Reverse Sorted,100,5,Quicksort,0.1924172
+264,Reverse Sorted,100,6,Quicksort,0.1934408
+265,Reverse Sorted,100,7,Quicksort,0.1929208
+266,Reverse Sorted,100,1,Built-in Python,0.2294014
+267,Reverse Sorted,100,2,Built-in Python,0.2249632
+268,Reverse Sorted,100,3,Built-in Python,0.2262578
+269,Reverse Sorted,100,4,Built-in Python,0.2267124
+270,Reverse Sorted,100,5,Built-in Python,0.2269188
+271,Reverse Sorted,100,6,Built-in Python,0.2245674
+272,Reverse Sorted,100,7,Built-in Python,0.2311411
+273,Reverse Sorted,100,1,Numpy,0.2011828
+274,Reverse Sorted,100,2,Numpy,0.1934131
+275,Reverse Sorted,100,3,Numpy,0.1964624
+276,Reverse Sorted,100,4,Numpy,0.1960983
+277,Reverse Sorted,100,5,Numpy,0.2069363
+278,Reverse Sorted,100,6,Numpy,0.1939683
+279,Reverse Sorted,100,7,Numpy,0.193678
+280,Reverse Sorted,1000,1,Merge sort,0.354667
+281,Reverse Sorted,1000,2,Merge sort,0.3646135
+282,Reverse Sorted,1000,3,Merge sort,0.568492
+283,Reverse Sorted,1000,4,Merge sort,0.5029413
+284,Reverse Sorted,1000,5,Merge sort,0.444857
+285,Reverse Sorted,1000,6,Merge sort,0.3711636
+286,Reverse Sorted,1000,7,Merge sort,0.3613687
+287,Reverse Sorted,1000,1,Heapsort,0.1808906
+288,Reverse Sorted,1000,2,Heapsort,0.1799944
+289,Reverse Sorted,1000,3,Heapsort,0.1804509
+290,Reverse Sorted,1000,4,Heapsort,0.182759
+291,Reverse Sorted,1000,5,Heapsort,0.1772469
+292,Reverse Sorted,1000,6,Heapsort,0.1783412
+293,Reverse Sorted,1000,7,Heapsort,0.1799808
+294,Reverse Sorted,1000,1,Built-in Python,0.1870005
+295,Reverse Sorted,1000,2,Built-in Python,0.1902651
+296,Reverse Sorted,1000,3,Built-in Python,0.1925376
+297,Reverse Sorted,1000,4,Built-in Python,0.1913994
+298,Reverse Sorted,1000,5,Built-in Python,0.1910654
+299,Reverse Sorted,1000,6,Built-in Python,0.2012794
+300,Reverse Sorted,1000,7,Built-in Python,0.194079
+301,Reverse Sorted,1000,1,Numpy,0.2935995
+302,Reverse Sorted,1000,2,Numpy,0.2957961
+303,Reverse Sorted,1000,3,Numpy,0.2944724
+304,Reverse Sorted,1000,4,Numpy,0.2950589
+305,Reverse Sorted,1000,5,Numpy,0.2992505
+306,Reverse Sorted,1000,6,Numpy,0.2973531
+307,Reverse Sorted,1000,7,Numpy,0.2951683
+308,Reverse Sorted,10000,1,Merge sort,0.1932829
+309,Reverse Sorted,10000,2,Merge sort,0.1803833
+310,Reverse Sorted,10000,3,Merge sort,0.1763346
+311,Reverse Sorted,10000,4,Merge sort,0.1812146
+312,Reverse Sorted,10000,5,Merge sort,0.1888086
+313,Reverse Sorted,10000,6,Merge sort,0.1974513
+314,Reverse Sorted,10000,7,Merge sort,0.1901294
+315,Reverse Sorted,10000,1,Heapsort,0.280701
+316,Reverse Sorted,10000,2,Heapsort,0.2805801
+317,Reverse Sorted,10000,3,Heapsort,0.281696
+318,Reverse Sorted,10000,4,Heapsort,0.2826054
+319,Reverse Sorted,10000,5,Heapsort,0.2718985
+320,Reverse Sorted,10000,6,Heapsort,0.2662621
+321,Reverse Sorted,10000,7,Heapsort,0.3062556
+322,Reverse Sorted,10000,1,Built-in Python,0.2040737
+323,Reverse Sorted,10000,2,Built-in Python,0.1999868
+324,Reverse Sorted,10000,3,Built-in Python,0.1988556
+325,Reverse Sorted,10000,4,Built-in Python,0.2011528
+326,Reverse Sorted,10000,5,Built-in Python,0.2035309
+327,Reverse Sorted,10000,6,Built-in Python,0.2026094
+328,Reverse Sorted,10000,7,Built-in Python,0.2025204
+329,Reverse Sorted,10000,1,Numpy,0.2826687
+330,Reverse Sorted,10000,2,Numpy,0.2919492
+331,Reverse Sorted,10000,3,Numpy,0.2932857
+332,Reverse Sorted,10000,4,Numpy,0.282678
+333,Reverse Sorted,10000,5,Numpy,0.2841928
+334,Reverse Sorted,10000,6,Numpy,0.2804973
+335,Reverse Sorted,10000,7,Numpy,0.2853463
+336,Reverse Sorted,100000,1,Merge sort,1.1745532
+337,Reverse Sorted,100000,2,Merge sort,1.1748867
+338,Reverse Sorted,100000,3,Merge sort,1.1736179
+339,Reverse Sorted,100000,4,Merge sort,1.1765804
+340,Reverse Sorted,100000,5,Merge sort,1.1756346
+341,Reverse Sorted,100000,6,Merge sort,1.1865971
+342,Reverse Sorted,100000,7,Merge sort,1.1785443
+343,Reverse Sorted,100000,1,Heapsort,1.787818
+344,Reverse Sorted,100000,2,Heapsort,1.774313
+345,Reverse Sorted,100000,3,Heapsort,1.7616791
+346,Reverse Sorted,100000,4,Heapsort,1.7695051
+347,Reverse Sorted,100000,5,Heapsort,1.7857709
+348,Reverse Sorted,100000,6,Heapsort,1.7706246
+349,Reverse Sorted,100000,7,Heapsort,1.7752517
+350,Reverse Sorted,100000,1,Built-in Python,0.2365994
+351,Reverse Sorted,100000,2,Built-in Python,0.2374174
+352,Reverse Sorted,100000,3,Built-in Python,0.2410199
+353,Reverse Sorted,100000,4,Built-in Python,0.23878
+354,Reverse Sorted,100000,5,Built-in Python,0.238283
+355,Reverse Sorted,100000,6,Built-in Python,0.2376444
+356,Reverse Sorted,100000,7,Built-in Python,0.246262
+357,Reverse Sorted,100000,1,Numpy,0.2304126
+358,Reverse Sorted,100000,2,Numpy,0.2360796
+359,Reverse Sorted,100000,3,Numpy,0.2339584
+360,Reverse Sorted,100000,4,Numpy,0.2287235
+361,Reverse Sorted,100000,5,Numpy,0.2338948
+362,Reverse Sorted,100000,6,Numpy,0.2265977
+363,Reverse Sorted,100000,7,Numpy,0.2240185
+364,Reverse Sorted,1000000,1,Merge sort,14.7991766
+365,Reverse Sorted,1000000,2,Merge sort,14.8553326
+366,Reverse Sorted,1000000,3,Merge sort,14.9384786
+367,Reverse Sorted,1000000,4,Merge sort,14.8356831
+368,Reverse Sorted,1000000,5,Merge sort,15.3132014
+369,Reverse Sorted,1000000,6,Merge sort,14.8124367
+370,Reverse Sorted,1000000,7,Merge sort,14.8483338
+371,Reverse Sorted,1000000,1,Heapsort,22.288611
+372,Reverse Sorted,1000000,2,Heapsort,22.2203677
+373,Reverse Sorted,1000000,3,Heapsort,22.316286
+374,Reverse Sorted,1000000,4,Heapsort,22.6729842
+375,Reverse Sorted,1000000,5,Heapsort,22.2759593
+376,Reverse Sorted,1000000,6,Heapsort,22.3939575
+377,Reverse Sorted,1000000,7,Heapsort,22.4514432
+378,Reverse Sorted,1000000,1,Built-in Python,0.2927184
+379,Reverse Sorted,1000000,2,Built-in Python,0.2914575
+380,Reverse Sorted,1000000,3,Built-in Python,0.326398
+381,Reverse Sorted,1000000,4,Built-in Python,0.2899967
+382,Reverse Sorted,1000000,5,Built-in Python,0.291083
+383,Reverse Sorted,1000000,6,Built-in Python,0.2891963
+384,Reverse Sorted,1000000,7,Built-in Python,0.2784899
+385,Reverse Sorted,1000000,1,Numpy,0.5425211
+386,Reverse Sorted,1000000,2,Numpy,0.542747
+387,Reverse Sorted,1000000,3,Numpy,0.533634
+388,Reverse Sorted,1000000,4,Numpy,0.5387848
+389,Reverse Sorted,1000000,5,Numpy,0.5442647
+390,Reverse Sorted,1000000,6,Numpy,0.5187576
+391,Reverse Sorted,1000000,7,Numpy,0.5249747
+392,Reverse Sorted,10000000,1,Merge sort,199.5921513
+393,Reverse Sorted,10000000,2,Merge sort,199.4335631
+394,Reverse Sorted,10000000,3,Merge sort,199.6245562
+395,Reverse Sorted,10000000,4,Merge sort,199.6941371
+396,Reverse Sorted,10000000,5,Merge sort,201.2602231
+397,Reverse Sorted,10000000,6,Merge sort,199.6324029
+398,Reverse Sorted,10000000,7,Merge sort,199.8698336
+399,Reverse Sorted,10000000,1,Heapsort,272.4039219
+400,Reverse Sorted,10000000,2,Heapsort,271.340345
+401,Reverse Sorted,10000000,3,Heapsort,271.6849308
+402,Reverse Sorted,10000000,4,Heapsort,272.5313112
+403,Reverse Sorted,10000000,5,Heapsort,272.6432842
+404,Reverse Sorted,10000000,6,Heapsort,272.3838864
+405,Reverse Sorted,10000000,7,Heapsort,272.3756719
+406,Reverse Sorted,10000000,1,Built-in Python,4.3461375
+407,Reverse Sorted,10000000,2,Built-in Python,4.3468312
+408,Reverse Sorted,10000000,3,Built-in Python,4.4564361
+409,Reverse Sorted,10000000,4,Built-in Python,4.2962356
+410,Reverse Sorted,10000000,5,Built-in Python,4.3295472
+411,Reverse Sorted,10000000,6,Built-in Python,4.3901435
+412,Reverse Sorted,10000000,7,Built-in Python,4.3602343
+413,Reverse Sorted,10000000,1,Numpy,8.0069834
+414,Reverse Sorted,10000000,2,Numpy,7.3743672
+415,Reverse Sorted,10000000,3,Numpy,7.5603166
+416,Reverse Sorted,10000000,4,Numpy,7.5319603
+417,Reverse Sorted,10000000,5,Numpy,7.3843394
+418,Reverse Sorted,10000000,6,Numpy,7.5122195
+419,Reverse Sorted,10000000,7,Numpy,7.5398865
+420,Random,10,1,Merge sort,0.2514426
+421,Random,10,2,Merge sort,0.2522724
+422,Random,10,3,Merge sort,0.2487412
+423,Random,10,4,Merge sort,0.2497528
+424,Random,10,5,Merge sort,0.2525585
+425,Random,10,6,Merge sort,0.2524794
+426,Random,10,7,Merge sort,0.2526685
+427,Random,10,1,Heapsort,0.2950432
+428,Random,10,2,Heapsort,0.2785828
+429,Random,10,3,Heapsort,0.2805881
+430,Random,10,4,Heapsort,0.278197
+431,Random,10,5,Heapsort,0.2798249
+432,Random,10,6,Heapsort,0.2773684
+433,Random,10,7,Heapsort,0.2839185
+434,Random,10,1,Quicksort,0.2273648
+435,Random,10,2,Quicksort,0.2303278
+436,Random,10,3,Quicksort,0.228405
+437,Random,10,4,Quicksort,0.2280755
+438,Random,10,5,Quicksort,0.2293694
+439,Random,10,6,Quicksort,0.2308521
+440,Random,10,7,Quicksort,0.2257799
+441,Random,10,1,Built-in Python,0.2517678
+442,Random,10,2,Built-in Python,0.2412139
+443,Random,10,3,Built-in Python,0.2497396
+444,Random,10,4,Built-in Python,0.2410006
+445,Random,10,5,Built-in Python,0.2467943
+446,Random,10,6,Built-in Python,0.2441633
+447,Random,10,7,Built-in Python,0.2446183
+448,Random,10,1,Numpy,0.2823183
+449,Random,10,2,Numpy,0.2827172
+450,Random,10,3,Numpy,0.282056
+451,Random,10,4,Numpy,0.2859191
+452,Random,10,5,Numpy,0.2848704
+453,Random,10,6,Numpy,0.2818272
+454,Random,10,7,Numpy,0.284481
+455,Random,100,1,Merge sort,0.3491411
+456,Random,100,2,Merge sort,0.3479391
+457,Random,100,3,Merge sort,0.3535473
+458,Random,100,4,Merge sort,0.348518
+459,Random,100,5,Merge sort,0.3491351
+460,Random,100,6,Merge sort,0.3476764
+461,Random,100,7,Merge sort,0.3490855
+462,Random,100,1,Heapsort,0.2054786
+463,Random,100,2,Heapsort,0.2078303
+464,Random,100,3,Heapsort,0.230509
+465,Random,100,4,Heapsort,0.2056593
+466,Random,100,5,Heapsort,0.2056336
+467,Random,100,6,Heapsort,0.2065648
+468,Random,100,7,Heapsort,0.2138215
+469,Random,100,1,Quicksort,0.2021835
+470,Random,100,2,Quicksort,0.2015087
+471,Random,100,3,Quicksort,0.2186633
+472,Random,100,4,Quicksort,0.2014818
+473,Random,100,5,Quicksort,0.218918
+474,Random,100,6,Quicksort,0.2025623
+475,Random,100,7,Quicksort,0.2029887
+476,Random,100,1,Built-in Python,0.333706
+477,Random,100,2,Built-in Python,0.3302394
+478,Random,100,3,Built-in Python,0.3339484
+479,Random,100,4,Built-in Python,0.3353651
+480,Random,100,5,Built-in Python,0.3440814
+481,Random,100,6,Built-in Python,0.3340962
+482,Random,100,7,Built-in Python,0.3340086
+483,Random,100,1,Numpy,0.3577908
+484,Random,100,2,Numpy,0.3558074
+485,Random,100,3,Numpy,0.3627431
+486,Random,100,4,Numpy,0.3584851
+487,Random,100,5,Numpy,0.3570998
+488,Random,100,6,Numpy,0.345663
+489,Random,100,7,Numpy,0.3480064
+490,Random,1000,1,Merge sort,0.1824267
+491,Random,1000,2,Merge sort,0.1824456
+492,Random,1000,3,Merge sort,0.1845155
+493,Random,1000,4,Merge sort,0.1816934
+494,Random,1000,5,Merge sort,0.1838015
+495,Random,1000,6,Merge sort,0.1830713
+496,Random,1000,7,Merge sort,0.1840011
+497,Random,1000,1,Heapsort,0.3404412
+498,Random,1000,2,Heapsort,0.350653
+499,Random,1000,3,Heapsort,0.3558395
+500,Random,1000,4,Heapsort,0.3469604
+501,Random,1000,5,Heapsort,0.3446228
+502,Random,1000,6,Heapsort,0.3423001
+503,Random,1000,7,Heapsort,0.344686
+504,Random,1000,1,Quicksort,0.3370493
+505,Random,1000,2,Quicksort,0.3410974
+506,Random,1000,3,Quicksort,0.344208
+507,Random,1000,4,Quicksort,0.3413874
+508,Random,1000,5,Quicksort,0.3393527
+509,Random,1000,6,Quicksort,0.3443211
+510,Random,1000,7,Quicksort,0.3393154
+511,Random,1000,1,Built-in Python,0.2436474
+512,Random,1000,2,Built-in Python,0.2209286
+513,Random,1000,3,Built-in Python,0.2255531
+514,Random,1000,4,Built-in Python,0.2240547
+515,Random,1000,5,Built-in Python,0.2214895
+516,Random,1000,6,Built-in Python,0.2232687
+517,Random,1000,7,Built-in Python,0.2276393
+518,Random,1000,1,Numpy,0.2696086
+519,Random,1000,2,Numpy,0.2709162
+520,Random,1000,3,Numpy,0.2718624
+521,Random,1000,4,Numpy,0.2676082
+522,Random,1000,5,Numpy,0.2695833
+523,Random,1000,6,Numpy,0.2729249
+524,Random,1000,7,Numpy,0.2695828
+525,Random,10000,1,Merge sort,0.2366203
+526,Random,10000,2,Merge sort,0.2291197
+527,Random,10000,3,Merge sort,0.2323177
+528,Random,10000,4,Merge sort,0.2387385
+529,Random,10000,5,Merge sort,0.2363105
+530,Random,10000,6,Merge sort,0.2301119
+531,Random,10000,7,Merge sort,0.2309533
+532,Random,10000,1,Heapsort,0.2462995
+533,Random,10000,2,Heapsort,0.243773
+534,Random,10000,3,Heapsort,0.2445923
+535,Random,10000,4,Heapsort,0.2449221
+536,Random,10000,5,Heapsort,0.2456628
+537,Random,10000,6,Heapsort,0.2438575
+538,Random,10000,7,Heapsort,0.2446117
+539,Random,10000,1,Quicksort,0.175536
+540,Random,10000,2,Quicksort,0.1755303
+541,Random,10000,3,Quicksort,0.17535
+542,Random,10000,4,Quicksort,0.1775428
+543,Random,10000,5,Quicksort,0.1734019
+544,Random,10000,6,Quicksort,0.1731462
+545,Random,10000,7,Quicksort,0.1895453
+546,Random,10000,1,Built-in Python,0.3022477
+547,Random,10000,2,Built-in Python,0.2802829
+548,Random,10000,3,Built-in Python,0.2793298
+549,Random,10000,4,Built-in Python,0.2784155
+550,Random,10000,5,Built-in Python,0.282907
+551,Random,10000,6,Built-in Python,0.2771165
+552,Random,10000,7,Built-in Python,0.2799735
+553,Random,10000,1,Numpy,0.5537508
+554,Random,10000,2,Numpy,0.5498238
+555,Random,10000,3,Numpy,0.5495828
+556,Random,10000,4,Numpy,0.5535726
+557,Random,10000,5,Numpy,0.554723
+558,Random,10000,6,Numpy,0.550553
+559,Random,10000,7,Numpy,0.5561697
+560,Random,100000,1,Merge sort,1.3323102
+561,Random,100000,2,Merge sort,1.3322162
+562,Random,100000,3,Merge sort,1.3340105
+563,Random,100000,4,Merge sort,1.33675
+564,Random,100000,5,Merge sort,1.3398902
+565,Random,100000,6,Merge sort,1.3541556
+566,Random,100000,7,Merge sort,1.3446791
+567,Random,100000,1,Heapsort,3.1035845
+568,Random,100000,2,Heapsort,3.1297621
+569,Random,100000,3,Heapsort,3.0973008
+570,Random,100000,4,Heapsort,3.1018143
+571,Random,100000,5,Heapsort,3.1029289
+572,Random,100000,6,Heapsort,3.1101802
+573,Random,100000,7,Heapsort,3.5700198
+574,Random,100000,1,Quicksort,1.1422506
+575,Random,100000,2,Quicksort,1.1636771
+576,Random,100000,3,Quicksort,1.1672076
+577,Random,100000,4,Quicksort,1.1533383
+578,Random,100000,5,Quicksort,1.1542238
+579,Random,100000,6,Quicksort,1.1593089
+580,Random,100000,7,Quicksort,1.1549054
+581,Random,100000,1,Built-in Python,0.2134875
+582,Random,100000,2,Built-in Python,0.2031422
+583,Random,100000,3,Built-in Python,0.2047657
+584,Random,100000,4,Built-in Python,0.2034345
+585,Random,100000,5,Built-in Python,0.2042114
+586,Random,100000,6,Built-in Python,0.2078525
+587,Random,100000,7,Built-in Python,0.2029892
+588,Random,100000,1,Numpy,0.3053143
+589,Random,100000,2,Numpy,0.3044579
+590,Random,100000,3,Numpy,0.3095526
+591,Random,100000,4,Numpy,0.3047485
+592,Random,100000,5,Numpy,0.3045177
+593,Random,100000,6,Numpy,0.3040213
+594,Random,100000,7,Numpy,0.2996255
+595,Random,1000000,1,Merge sort,16.0372628
+596,Random,1000000,2,Merge sort,16.0345706
+597,Random,1000000,3,Merge sort,16.0261038
+598,Random,1000000,4,Merge sort,16.003889
+599,Random,1000000,5,Merge sort,16.053619
+600,Random,1000000,6,Merge sort,16.0930903
+601,Random,1000000,7,Merge sort,16.4825353
+602,Random,1000000,1,Heapsort,39.7484418
+603,Random,1000000,2,Heapsort,39.5286878
+604,Random,1000000,3,Heapsort,40.1529075
+605,Random,1000000,4,Heapsort,39.414972
+606,Random,1000000,5,Heapsort,39.7241205
+607,Random,1000000,6,Heapsort,39.7898792
+608,Random,1000000,7,Heapsort,39.8194176
+609,Random,1000000,1,Quicksort,14.3583458
+610,Random,1000000,2,Quicksort,14.2854028
+611,Random,1000000,3,Quicksort,14.263447
+612,Random,1000000,4,Quicksort,14.2895444
+613,Random,1000000,5,Quicksort,14.3036933
+614,Random,1000000,6,Quicksort,14.639009
+615,Random,1000000,7,Quicksort,14.299143
+616,Random,1000000,1,Built-in Python,1.5909107
+617,Random,1000000,2,Built-in Python,1.5349624
+618,Random,1000000,3,Built-in Python,1.5338767
+619,Random,1000000,4,Built-in Python,1.5294506
+620,Random,1000000,5,Built-in Python,1.5379683
+621,Random,1000000,6,Built-in Python,1.5347589
+622,Random,1000000,7,Built-in Python,1.5333076
+623,Random,1000000,1,Numpy,0.3540695
+624,Random,1000000,2,Numpy,0.3524121
+625,Random,1000000,3,Numpy,0.353449
+626,Random,1000000,4,Numpy,0.3520417
+627,Random,1000000,5,Numpy,0.3550662
+628,Random,1000000,6,Numpy,0.3532305
+629,Random,1000000,7,Numpy,0.3514958
+630,Random,10000000,1,Merge sort,182.2649383
+631,Random,10000000,2,Merge sort,182.155925
+632,Random,10000000,3,Merge sort,182.109671
+633,Random,10000000,4,Merge sort,182.251963
+634,Random,10000000,5,Merge sort,182.9837056
+635,Random,10000000,6,Merge sort,181.9907698
+636,Random,10000000,7,Merge sort,183.6047966
+637,Random,10000000,1,Heapsort,467.6833436
+638,Random,10000000,2,Heapsort,466.038842
+639,Random,10000000,3,Heapsort,465.314195
+640,Random,10000000,4,Heapsort,466.409223
+641,Random,10000000,5,Heapsort,466.9826547
+642,Random,10000000,6,Heapsort,468.3901706
+643,Random,10000000,7,Heapsort,466.1712854
+644,Random,10000000,1,Quicksort,164.898236
+645,Random,10000000,2,Quicksort,164.5737695
+646,Random,10000000,3,Quicksort,164.1185099
+647,Random,10000000,4,Quicksort,164.3597688
+648,Random,10000000,5,Quicksort,164.3581963
+649,Random,10000000,6,Quicksort,164.2184733
+650,Random,10000000,7,Quicksort,165.8164863
+651,Random,10000000,1,Built-in Python,23.1433574
+652,Random,10000000,2,Built-in Python,22.2571433
+653,Random,10000000,3,Built-in Python,22.2895046
+654,Random,10000000,4,Built-in Python,22.1174617
+655,Random,10000000,5,Built-in Python,22.1636134
+656,Random,10000000,6,Built-in Python,22.1544621
+657,Random,10000000,7,Built-in Python,22.2564168
+658,Random,10000000,1,Numpy,2.0901588
+659,Random,10000000,2,Numpy,2.0837041
+660,Random,10000000,3,Numpy,1.9114684
+661,Random,10000000,4,Numpy,1.899691
+662,Random,10000000,5,Numpy,1.9529775
+663,Random,10000000,6,Numpy,2.0736167
+664,Random,10000000,7,Numpy,2.0988767
