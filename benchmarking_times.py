@@ -123,76 +123,44 @@ np.random.seed(12235)
 results = pd.DataFrame(
     columns=['Input ordering', 'Input size', 'Run number', 'Sorting algorithm',
              'Time'])
+sorting_functions = {'Merge sort': merge_sort, 'Heapsort': heap_sort,
+                     'Quicksort': quick_sort, 'Built-in Python': sorted,
+                     'Numpy': np.sort}
 
 for input_ordering in ['sorted', 'reverse', 'random']:
-    for input_size in range(1, 7):
+    for input_size in range(1, 8):
         test_data = np.random.random((10 ** input_size,))
         if input_ordering == 'sorted':
             test_data = sorted(test_data)
         elif input_ordering == 'reverse':
             test_data = list(reversed(sorted(test_data)))
 
-        clock = timeit.Timer(stmt='sort_func(copy(data))',
-                             globals={'sort_func': merge_sort,
-                                      'data': test_data,
-                                      'copy': copy.copy})
+        for sorting_name, sorting_function in sorting_functions.items():
+            quicksort_recursion_error = sorting_name == 'Quicksort' and ((input_ordering == 'sorted' or input_ordering == 'reverse') and input_size > 2)
 
-        n_ar, t_ar = clock.autorange()
-        t = clock.repeat(repeat=7, number=n_ar)
-        print(
-            f"Merge sort minimum time on {input_ordering} data of size 10^{input_size}:",
-            min(t))
+            if not quicksort_recursion_error:
+                clock = timeit.Timer(stmt='sort_func(copy(data))',
+                                     globals={'sort_func': sorting_function,
+                                              'data': test_data,
+                                              'copy': copy.copy})
 
-        for run_number in range(7):
-            results = results.append({'Input ordering': input_ordering,
-                                      'Input size': 10 ** input_size,
-                                      'Run number': run_number + 1,
-                                      'Sorting algorithm': 'merge_sort',
-                                      'Time': t[run_number]},
-                                     ignore_index=True)
+                n_ar, t_ar = clock.autorange()
+                t = clock.repeat(repeat=7, number=n_ar)
+                print(
+                    f"{sorting_name} minimum time on {input_ordering} data of size 10^{input_size}:",
+                    min(t))
 
-        clock = timeit.Timer(stmt='sort_func(copy(data))',
-                             globals={'sort_func': heap_sort,
-                                      'data': test_data,
-                                      'copy': copy.copy})
-
-        n_ar, t_ar = clock.autorange()
-        t = clock.repeat(repeat=7, number=n_ar)
-        print(
-            f"Heap sort minimum time on {input_ordering} data of size 10^{input_size}:",
-            min(t))
-
-        for run_number in range(7):
-            results = results.append({'Input ordering': input_ordering,
-                                      'Input size': 10 ** input_size,
-                                      'Run number': run_number + 1,
-                                      'Sorting algorithm': 'heap_sort',
-                                      'Time': t[run_number]},
-                                     ignore_index=True)
-
-        if not ((
-                        input_ordering == 'sorted' or input_ordering == 'reverse') and input_size > 2):
-            clock = timeit.Timer(stmt='sort_func(copy(data))',
-                                 globals={'sort_func': quick_sort,
-                                          'data': test_data,
-                                          'copy': copy.copy})
-
-            n_ar, t_ar = clock.autorange()
-            t = clock.repeat(repeat=7, number=n_ar)
-            print(
-                f"Quick sort minimum time on {input_ordering} data of size 10^{input_size}:",
-                min(t))
+                for run_number in range(7):
+                    results = results.append({'Input ordering': input_ordering,
+                                              'Input size': 10 ** input_size,
+                                              'Run number': run_number + 1,
+                                              'Sorting algorithm': sorting_name,
+                                              'Time': t[run_number]},
+                                             ignore_index=True)
         print("--------------------")
 
-        for run_number in range(7):
-            results = results.append({'Input ordering': input_ordering,
-                                      'Input size': 10 ** input_size,
-                                      'Run number': run_number + 1,
-                                      'Sorting algorithm': 'quick_sort',
-                                      'Time': t[run_number]},
-                                     ignore_index=True)
-
 print(results)
+results.to_csv('results.csv')
 
 ## Plotting results
 for input_ord in ['sorted', 'reverse', 'random']:
@@ -202,32 +170,23 @@ for input_ord in ['sorted', 'reverse', 'random']:
     is_input_ord = results['Input ordering'] == input_ord
     results_input_ord = results[is_input_ord]
 
-    is_merge_sort = results_input_ord['Sorting algorithm'] == 'merge_sort'
-    results_merge_sort = results_input_ord[is_merge_sort]
-    merge_sort_means = []
-    for input_size in [1, 2, 3, 4, 5, 6]:
-        is_input_size = results_merge_sort['Input size'] == 10 ** input_size
-        results_input_size = results_merge_sort[is_input_size]
-        merge_sort_means.append(np.mean(results_input_size['Time']))
-    plt.plot([1, 2, 3, 4, 5, 6], merge_sort_means)
+    for sorting_algorithm in ['Merge sort', 'Heapsort', 'Quicksort',
+                              'Built-in Python', 'Numpy']:
 
-    is_heap_sort = results_input_ord['Sorting algorithm'] == 'heap_sort'
-    results_heap_sort = results_input_ord[is_heap_sort]
-    heap_sort_means = []
-    for input_size in [1, 2, 3, 4, 5, 6]:
-        is_input_size = results_heap_sort['Input size'] == 10 ** input_size
-        results_input_size = results_heap_sort[is_input_size]
-        heap_sort_means.append(np.mean(results_input_size['Time']))
-    plt.plot([1, 2, 3, 4, 5, 6], heap_sort_means)
+        is_sorting_algorithm = results_input_ord[
+                                   'Sorting algorithm'] == sorting_algorithm
+        results_sorting_algorithm = results_input_ord[is_sorting_algorithm]
+        sorting_algorithm_means = []
+        for input_size in [1, 2, 3, 4, 5, 6, 7]:
+            is_input_size = results_sorting_algorithm[
+                                'Input size'] == 10 ** input_size
+            results_input_size = results_sorting_algorithm[is_input_size]
+            sorting_algorithm_means.append(np.mean(results_input_size['Time']))
+        plt.plot([1, 2, 3, 4, 5, 6, 7], np.log10(sorting_algorithm_means))
 
-    is_quick_sort = results_input_ord['Sorting algorithm'] == 'quick_sort'
-    results_quick_sort = results_input_ord[is_quick_sort]
-    quick_sort_means = []
-    for input_size in [1, 2, 3, 4, 5, 6]:
-        is_input_size = results_quick_sort['Input size'] == 10 ** input_size
-        results_input_size = results_quick_sort[is_input_size]
-        quick_sort_means.append(np.mean(results_input_size['Time']))
-    plt.plot([1, 2, 3, 4, 5, 6], quick_sort_means)
-    plt.legend(['Merge sort', 'Heap sort', 'Quicksort'])
+    plt.legend(
+        ['Merge sort', 'Heapsort', 'Quicksort', 'Built-in Python', 'Numpy'])
+    plt.savefig(input_ord + '.png')
+
 
 
